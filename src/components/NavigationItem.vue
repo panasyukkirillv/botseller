@@ -2,9 +2,9 @@
     
     <!-- Navigation Item -->
     <li class="list-group-item p-0">
-        <a class="btn btn-primary btn-sm d-block rounded-0 text-start active" href="#">
+        <span class="btn btn-primary btn-sm d-block rounded-0 text-start active">
             <slot></slot>
-        </a>
+        </span>
     </li>
     <!-- / Navigation Item -->
 

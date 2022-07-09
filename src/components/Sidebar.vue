@@ -1,7 +1,7 @@
 <template>
     
     <!-- Sidebar -->
-    <div class="mb-2 mb-lg-0 sidebar col-12 col-lg-3">
+    <div class="mb-4 mb-lg-0 sidebar col-12 col-lg-3">
 
         <Navigation/>
 

@@ -7,9 +7,11 @@
 
                 <Sidebar/>
 
-                <Content/>
-
-
+                <Content
+                    :products="products"
+                        @activate="activateProduct"
+                        @deactivate="deactivateProduct" 
+                />
 
             </div>
         </div>
@@ -27,6 +29,20 @@
         components: {
             Sidebar,
             Content,
+        },
+        props: {
+            products: {
+                type: Array,
+                required: true,
+            },
+        },
+        methods: {
+            activateProduct (product) {
+                this.$emit('activate', product)
+            },
+            deactivateProduct (product) {
+                this.$emit('deactivate', product)
+            },
         },
     }
 

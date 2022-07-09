@@ -1,19 +1,28 @@
 <template>
-    
-    <!-- Content -->
-    <div class="mb-4 mb-lg-0 content col-12 col-lg-9">
-        <router-view
-            :products="products"
-            @activate="activateProduct"
-            @deactivate="deactivateProduct"
-        ></router-view>
-    </div>
-    <!-- / Content -->
+
+    <ContentTitle>
+        <span class="bi bi-bag"></span>
+        Каталог
+    </ContentTitle>
+
+    <CatalogList 
+        :products="products" 
+        @activate="activateProduct"
+        @deactivate="deactivateProduct"
+    />
 
 </template>
 
 <script>
+
+    import ContentTitle from '@/components/ContentTitle'
+    import CatalogList from '@/components/CatalogList'
+
     export default {
+        components: {
+            ContentTitle,
+            CatalogList,
+        },
         props: {
             products: {
                 type: Array,
@@ -29,5 +38,4 @@
             },
         },
     }
-
 </script>
