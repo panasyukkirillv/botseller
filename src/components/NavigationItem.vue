@@ -2,7 +2,7 @@
     
     <!-- Navigation Item -->
     <li class="list-group-item p-0">
-        <span class="btn btn-primary btn-sm d-block rounded-0 text-start active">
+        <span class="btn btn-dark btn-sm d-block rounded-0 text-start">
             <slot></slot>
         </span>
     </li>

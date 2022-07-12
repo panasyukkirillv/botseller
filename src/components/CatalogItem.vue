@@ -9,7 +9,7 @@
                         <img class="card-img-top mb-2" :src="product.image" alt="no-photo-available">
                         <div class="badge d-block mb-2 p-2 rounded-0" :class="{ 'text-bg-success': product.status, 'text-bg-danger': !product.status }" v-text="product.status ? 'Активирован' : 'Деактивирован'"></div>
                         <div class="btn-group w-100">
-                            <button class="btn btn-primary w-100 rounded-0" data-bs-toggle="dropdown" type="button">
+                            <button class="btn btn-dark w-100 rounded-0" data-bs-toggle="dropdown" type="button">
                                 <i class="bi bi-three-dots"></i>
                             </button>
                             <ul class="dropdown-menu w-100 rounded-0">

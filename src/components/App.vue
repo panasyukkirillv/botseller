@@ -141,4 +141,18 @@
         padding: 0;
     }
 
+    a {
+        text-decoration: none;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    body {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
 </style>
